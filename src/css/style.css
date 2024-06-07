@@ -82,11 +82,21 @@ body {
   bottom: 30px;
   right: 30px;
   background-color: #ee81a6;
+  transition: all 0.3s ease-in-out;
+}
+
+.open-dialog:hover {
+  background-color: #ec709a;
 }
 
 .close-dialog {
   margin-bottom: 7px;
   background-color: #b8acf7;
+  transition: all 0.3s ease-in-out;
+}
+
+.close-dialog:hover {
+  background-color: #a99af5;
 }
 
 .dialog-container {
