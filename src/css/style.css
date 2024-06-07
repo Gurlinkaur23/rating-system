@@ -1,0 +1,106 @@
+@charset "utf-8";
+
+:root {
+  --app-background-dark: rgb(24, 23, 32);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  border-style: none;
+  vertical-align: baseline;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Nunito sans", "Open sans", Arial, sans-serif;
+  background-color: var(--app-background-dark);
+  color: #fff;
+  letter-spacing: 0.3px;
+}
+
+.container {
+  width: min(100% - 30px, 1080px);
+  /* margin-inline: auto; */
+  height: 100vh;
+  margin-inline: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* ------- Ratings container styles ------- */
+
+.ratings-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.ratings-container h2 {
+  margin-top: 16px;
+  font-size: 16px;
+}
+
+/* ------- Star styles ------- */
+
+.stars-container {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.fa-star {
+  cursor: pointer;
+  font-size: 38px;
+  transition: all 0.3s ease-in-out;
+}
+
+.yellow {
+  color: #f0d44a;
+}
+
+.grey {
+  color: #53535b;
+}
+
+/* ------- Dialog styles ------- */
+
+.btn {
+  text-transform: uppercase;
+  font-weight: 600;
+  padding: 10px 20px;
+  border-radius: 20px;
+  color: #fff;
+  cursor: pointer;
+}
+
+.open-dialog {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  background-color: #ee81a6;
+}
+
+.close-dialog {
+  margin-bottom: 7px;
+  background-color: #b8acf7;
+}
+
+.dialog-container {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #000 url(../img/rating-dialog-img.avif) center center / cover
+    no-repeat fixed;
+  height: 350px;
+  width: 500px;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: space-between;
+  align-items: center;
+}
